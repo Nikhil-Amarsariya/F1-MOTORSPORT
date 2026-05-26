@@ -1,0 +1,112 @@
+/* PAGE */
+
+.tracks-container {
+
+  min-height: 100vh;
+
+  padding: 120px 40px;
+
+  background-color: var(--bg-color);
+
+  color: var(--text-color);
+}
+
+/* TITLE */
+
+.tracks-container h1 {
+
+  text-align: center;
+
+  font-size: 50px;
+
+  margin-bottom: 40px;
+}
+
+/* SEARCH */
+
+.search-box {
+
+  width: 100%;
+  max-width: 500px;
+
+  display: block;
+
+  margin: 0 auto 50px auto;
+
+  padding: 15px 20px;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 10px;
+
+  font-size: 18px;
+
+  background-color: #1e1e1e;
+
+  color: white;
+}
+
+.search-box:focus {
+
+  box-shadow:
+    0 0 10px rgba(225, 6, 0, 0.7);
+}
+
+/* GRID */
+
+.tracks-grid {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 30px;
+}
+
+/* EMPTY */
+
+.empty-state {
+
+  width: 100%;
+
+  text-align: center;
+
+  padding: 100px 20px;
+}
+
+.empty-state h2 {
+
+  font-size: 40px;
+
+  color: red;
+}
+
+/* LIGHT MODE */
+
+.light .search-box {
+
+  background-color: white;
+
+  color: black;
+
+  border: 1px solid #ccc;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .tracks-container {
+
+    padding: 100px 20px;
+  }
+
+  .tracks-container h1 {
+
+    font-size: 38px;
+  }
+}

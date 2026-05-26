@@ -1,0 +1,29 @@
+.loader-container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ gap: 20px;
+  background-color: #111;
+  color: white;
+}
+
+.spinner {
+  width: 70px;
+  height: 70px;
+
+  border: 6px solid #333;
+  border-top: 6px solid red;
+
+  border-radius: 50%;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

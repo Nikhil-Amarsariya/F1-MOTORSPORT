@@ -1,0 +1,202 @@
+/* CARD */
+
+.driver-card {
+
+  width: 320px;
+
+  background-color: #1b1b1b;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  border: 1px solid #333;
+
+  transition: 0.3s ease;
+}
+
+.driver-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: red;
+
+  box-shadow:
+    0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+/* IMAGE */
+
+.driver-card img {
+
+  width: 100%;
+
+  height: 320px;
+
+  object-fit: cover;
+
+  display: block;
+
+  background-color: #222;
+}
+
+/* INFO */
+
+.driver-info {
+
+  padding: 22px;
+}
+
+/* NAME */
+
+.driver-info h2 {
+
+  font-size: 28px;
+
+  margin-bottom: 18px;
+
+  color: white;
+}
+
+/* DETAILS */
+
+.driver-info p {
+
+  color: #ccc;
+
+  margin-bottom: 12px;
+
+  font-size: 17px;
+}
+
+.driver-info span {
+
+  color: red;
+
+  font-weight: bold;
+}
+
+/* BUTTON AREA */
+
+.driver-buttons {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 25px;
+}
+
+/* FAVORITE BUTTON */
+
+.favorite-btn {
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background-color: red;
+
+  color: white;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.favorite-btn:hover {
+
+  background-color: darkred;
+
+  transform: scale(1.05);
+}
+
+/* ACTIVE FAVORITE */
+
+.active-favorite {
+
+  background-color: #ff1e1e;
+}
+
+/* PROFILE BUTTON */
+
+.profile-btn {
+
+  flex: 1;
+
+  padding: 15px 20px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background-color: red;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.profile-btn:hover {
+
+  background-color: darkred;
+
+  transform: scale(1.03);
+}
+
+/* LIGHT MODE */
+
+.light .driver-card {
+
+  background-color: #1b1b1b;
+}
+
+.light .driver-info h2 {
+
+  color: white;
+}
+
+.light .driver-info p {
+
+  color: #ccc;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .driver-card {
+
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .driver-card img {
+
+    height: 280px;
+  }
+
+  .driver-buttons {
+
+    flex-direction: row;
+  }
+}

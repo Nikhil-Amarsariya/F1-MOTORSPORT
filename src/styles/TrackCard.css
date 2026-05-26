@@ -1,0 +1,178 @@
+/* CARD */
+
+.track-card {
+
+  width: 320px;
+
+  background-color: #1b1b1b;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  border: 1px solid #333;
+
+  transition: 0.3s ease;
+}
+
+.track-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: red;
+
+  box-shadow:
+    0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+/* IMAGE */
+
+.track-card img {
+
+  width: 100%;
+
+  height: 240px;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: 0.4s ease;
+}
+
+.track-card:hover img {
+
+  transform: scale(1.05);
+}
+
+/* CONTENT */
+
+.track-content {
+
+  padding: 22px;
+}
+
+/* COUNTRY */
+
+.track-country {
+
+  display: inline-block;
+
+  background-color: red;
+
+  color: white;
+
+  padding: 8px 16px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  margin-bottom: 20px;
+}
+
+/* TITLE */
+
+.track-content h2 {
+
+  font-size: 28px;
+
+  margin-bottom: 20px;
+
+  color: white;
+}
+
+/* INFO */
+
+.track-info p {
+
+  color: #ccc;
+
+  margin-bottom: 12px;
+
+  font-size: 17px;
+}
+
+.track-info span {
+
+  color: red;
+
+  font-weight: bold;
+}
+
+/* BUTTON */
+
+.track-content button {
+
+  margin-top: 20px;
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #e10600,
+      #ff3c3c
+    );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.track-content button:hover {
+
+  background-color: darkred;
+
+  transform: scale(1.02);
+}
+
+/* LIGHT MODE */
+
+.light .track-card {
+
+  background-color: #1b1b1b;
+}
+
+.light .track-content h2 {
+
+  color: white;
+}
+
+.light .track-info p {
+
+  color: #ccc;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .track-card {
+
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .track-card img {
+
+    height: 220px;
+  }
+
+  .track-content h2 {
+
+    font-size: 24px;
+  }
+}

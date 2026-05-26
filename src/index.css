@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* THEME VARIABLES */
+
+:root {
+  --bg-color: #111;
+  --text-color: white;
+
+  --card-color: #1b1b1b;
+
+  --paragraph-color: #ccc;
+
+  --input-bg: #1b1b1b;
+
+  --input-text: white;
+}
+
+/* LIGHT MODE */
+
+.light {
+  --bg-color: #dcdcdc;
+
+  --text-color: #111;
+
+  /* KEEP CARDS DARK */
+
+  --card-color: #1b1b1b;
+
+  --paragraph-color: #d1d1d1;
+
+  --input-bg: #efefef;
+
+  --input-text: black;
+}
+
+/* BODY */
+
+body {
+  background-color: var(--bg-color);
+
+  color: var(--text-color);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  padding-top: 80px;
+
+  transition: 0.3s ease;
+}
+
+/* LINKS */
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+/* BUTTON */
+
+button {
+  cursor: pointer;
+}
+
+/* APP */
+
+.app {
+  min-height: 100vh;
+
+  background-color: var(--bg-color);
+
+  color: var(--text-color);
+
+  transition: 0.3s ease;
+}
+
+/* COMMON PAGE */
+
+.page {
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 40px;
+
+  font-weight: bold;
+}
+
+/* DRIVERS */
+
+.drivers-container {
+  min-height: 100vh;
+
+  padding: 120px 40px;
+
+  background-color: var(--bg-color);
+
+  color: var(--text-color);
+}
+
+.drivers-page {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+/* NEWS */
+
+.news-container {
+  min-height: 100vh;
+
+  padding: 120px 40px;
+
+  background-color: var(--bg-color);
+
+  color: var(--text-color);
+}
+
+.news-page {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+/* SEARCH */
+
+.search-box {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.search-box input {
+  width: 500px;
+
+  padding: 15px 20px;
+
+  border: 2px solid red;
+
+  border-radius: 10px;
+
+  background-color: var(--input-bg);
+
+  color: var(--input-text);
+
+  font-size: 18px;
+
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+.search-box input:focus {
+  box-shadow: 0 0 10px rgba(225, 6, 0, 0.7);
+}
+
+.search-box input::placeholder {
+  color: #999;
+}
+
+/* CARD THEMES */
+
+.driver-card,
+.news-card,
+.race-card,
+.team-card,
+.details-card,
+.team-details-card,
+.track-card,
+.track-details-card {
+  background-color: var(--card-color);
+
+  color: var(--text-color);
+
+  transition: 0.3s ease;
+}
+
+/* PARAGRAPHS */
+
+.driver-info p,
+.news-content p,
+.race-card p,
+.team-content p,
+.details-content p,
+.team-details-content p,
+.track-content p,
+.track-details-content p {
+  color: var(--paragraph-color);
+}
+
+/* RED LABELS */
+
+.driver-info span,
+.race-card span,
+.team-content span,
+.details-content span,
+.team-details-content span,
+.track-content span,
+.track-details-content span {
+  color: red;
+
+  font-weight: bold;
+}
+
+/* EMPTY STATE */
+
+.empty-state {
+  width: 100%;
+
+  text-align: center;
+
+  padding: 100px 20px;
+}
+
+.empty-state h2 {
+  font-size: 40px;
+
+  margin-bottom: 20px;
+
+  color: red;
+}
+
+.empty-state p {
+  font-size: 20px;
+
+  color: rgb(80, 79, 79);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .drivers-container,
+  .news-container {
+    padding: 100px 20px;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+}

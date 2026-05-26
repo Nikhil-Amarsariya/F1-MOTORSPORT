@@ -1,0 +1,173 @@
+/* CARD */
+
+.race-card {
+
+  width: 320px;
+
+  background-color: #1b1b1b;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  border: 1px solid #333;
+
+  transition: 0.3s ease;
+
+  padding: 25px;
+}
+
+.race-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: red;
+
+  box-shadow:
+    0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+/* TOP SECTION */
+
+.race-top {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+/* ROUND */
+
+.race-round {
+
+  display: inline-block;
+
+  background-color: red;
+
+  color: white;
+
+  padding: 8px 16px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  font-weight: bold;
+}
+
+/* STATUS */
+
+.race-status {
+
+  padding: 8px 16px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  color: white;
+}
+
+.completed {
+
+  background-color: #444;
+}
+
+.upcoming {
+
+  background-color: #e10600;
+}
+
+/* TITLE */
+
+.race-card h2 {
+
+  font-size: 28px;
+
+  margin-bottom: 22px;
+
+  color: white;
+}
+
+/* INFO */
+
+.race-info p {
+
+  color: #ccc;
+
+  margin-bottom: 12px;
+
+  font-size: 17px;
+}
+
+.race-info span {
+
+  color: red;
+
+  font-weight: bold;
+}
+
+/* COUNTDOWN */
+
+.countdown {
+
+  margin-top: 25px;
+
+  background-color: red;
+
+  color: white;
+
+  padding: 14px;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  font-weight: bold;
+
+  font-size: 18px;
+}
+
+/* LIGHT MODE */
+
+.light .race-card {
+
+  background-color: #1b1b1b;
+}
+
+.light .race-card h2 {
+
+  color: white;
+}
+
+.light .race-info p {
+
+  color: #ccc;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .race-card {
+
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .race-card h2 {
+
+    font-size: 24px;
+  }
+
+  .countdown {
+
+    font-size: 16px;
+  }
+}

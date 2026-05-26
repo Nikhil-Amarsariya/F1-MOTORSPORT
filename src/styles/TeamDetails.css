@@ -1,0 +1,109 @@
+.team-details-page {
+  min-height: 100vh;
+
+  padding: 120px 40px;
+
+  background: var(--bg-color);
+}
+
+.team-details-card {
+  width: 100%;
+
+  border-radius: 25px;
+
+  padding: 40px;
+
+  color: white;
+}
+
+.details-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+}
+
+.details-top h1 {
+  font-size: 70px;
+
+  margin-bottom: 20px;
+}
+
+.details-drivers {
+  display: flex;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.details-drivers span {
+  background: rgba(0, 0, 0, 0.2);
+
+  padding: 10px 16px;
+
+  border-radius: 30px;
+
+  font-weight: 600;
+}
+
+.details-logo {
+  width: 90px;
+
+  height: 90px;
+
+  object-fit: contain;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  border-radius: 50%;
+
+  padding: 10px;
+}
+
+.details-car {
+  width: 100%;
+
+  max-width: 1100px;
+
+  display: block;
+
+  margin: 40px auto;
+}
+
+.details-grid {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  );
+
+  gap: 20px;
+}
+
+.back-btn {
+  margin: 20px;
+  padding: 12px 24px;
+
+  background-color: #e10600;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.back-btn:hover {
+  background-color: #ff2b2b;
+  transform: translateY(-2px);
+}
